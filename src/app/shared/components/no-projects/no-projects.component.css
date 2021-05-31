@@ -1,0 +1,48 @@
+.container { 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    height: 25rem;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.container__text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 1 auto;
+    flex-direction: column;
+}
+
+.container__img {
+    flex: 0 0 20rem;
+
+}
+
+.container__img img {
+    max-width: 100%;
+}
+
+.container__button {
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem;
+
+}
+
+.container__link {
+    color:var(--white);
+}
+
+
+@media (max-width: 500px){
+    .container {
+        margin: 20px 20px;
+    }
+}

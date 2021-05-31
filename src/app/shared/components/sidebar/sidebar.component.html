@@ -1,0 +1,12 @@
+    <h1 class="logo"> 
+        <app-toggle-menu (sidebarEmitter)="displaySidebar()"></app-toggle-menu> Mybox 
+    </h1>
+    <nav class="sidebar" id="sidebar">
+        <ul class="sidebar__nav">
+            <li class="sidebar__item" routerLinkActive="sidebar__item--active"> <span class="sidebar__link"> See all projects </span> </li>
+            <li class="sidebar__item" routerLink="/project/new" routerLinkActive="sidebar__item--active"> <span class="sidebar__link"> Create project </span> </li>
+            <li class="sidebar__item" routerLinkActive="sidebar__item--active"> <span class="sidebar__link"> See all tasks </span> </li>
+            <li class="sidebar__item" routerLinkActive="sidebar__item--active"> <span class="sidebar__link"> Create task </span> </li>            
+        </ul>
+    </nav>
+

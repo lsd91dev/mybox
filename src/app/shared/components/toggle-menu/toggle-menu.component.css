@@ -1,0 +1,84 @@
+.menu {
+    position:relative;
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+    display:none;
+}
+
+.menu:after, .menu:before, .center {
+    position:absolute;
+    content: '';
+    height: 5px;
+    width: 85%;
+    border-radius: 7px;
+    background: var(--white);
+}
+
+.menu:after {
+    bottom: 5px;
+    left:3px;
+    transition: all 300ms 0.1s;
+}
+
+.center {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms 0.3s;
+    left:3px;
+}
+
+.menu:before {
+    z-index:10;
+    transition: all 300ms;
+    top: 5px;
+    left:3px;
+}
+
+
+.menu-text {
+    position: absolute;
+    color:var(--white);
+    opacity: 0;
+    top: -30px;
+    left: -30px;
+    font-size: 1rem;
+    transition: all 300ms 0.4s;
+}
+
+
+/* Hover effect */
+
+/* .menu:hover:before, .menu:hover:after{
+    transform: translateX(-50px);
+}
+
+.menu:hover .center{
+    transform:translateY(7px);
+}
+
+.menu:hover .menu-text {
+    top: -33px;
+    opacity: 1;
+} */
+
+@media (max-width: 500px){
+    .menu {
+        display: block;
+        margin: 0 15px; 
+    }
+
+    .center {
+        position: absolute;
+    }
+
+    .effect { 
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 50%;
+        background: pink;
+     }
+}

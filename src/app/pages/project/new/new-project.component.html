@@ -1,0 +1,37 @@
+<div class="container">
+    <app-sidebar></app-sidebar>
+
+    <form action="" class="form">
+
+        <div class="form__input-group">
+            <label for="name"> Project Name </label>
+            <input type="text" name="name" id="name">
+        </div>
+
+        <div class="form__input-group">
+            <label for="github"> Github repository </label>
+            <small> <i> (Optional) </i> </small>
+            <input type="text" name="github" id="github">
+        </div>        
+
+        <div class="form__input-group">
+            <label for="description"> Description </label>
+            <input type="text" name="description" id="description">
+        </div>
+
+        <div class="form__input-group">
+            <p> Assign task </p>
+            <small> You can assign tasks not asigned to other projects to this one </small>
+            <button> Asign all </button>
+            <!-- Checkboxes -->
+            <button> Asign </button><button> Reset </button>
+        </div>
+
+        <div class="form__input-group">
+            <label for="task"> Create new task for this project </label>
+            <input type="text" name="task" id="task">
+        </div>
+
+        <button> Create project </button>
+    </form>
+</div>
