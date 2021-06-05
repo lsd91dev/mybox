@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './home/home.component';
 
 
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'project', loadChildren: ()=> import('./modules/project/project-routing.module').then( m => m.ProjectRoutingModule ) }
+  { path: 'project', loadChildren: ()=> import('./pages/project/project-routing.module').then( m => m.ProjectRoutingModule ) }
 ]
 @NgModule({
   declarations: [],

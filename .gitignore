@@ -1,4 +1,9 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+/documentacion
+
+back/node_modules
+back/.env
+back/mongo
+
 
 # compiled output
 /dist
@@ -8,39 +13,39 @@
 /bazel-out
 
 # dependencies
-/node_modules
+front/node_modules
 
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+front/.idea
+front/.project
+front/.classpath
+front/.c9/
+front/*.launch
+front/.settings/
+front/*.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+front/.vscode/*
+front/!.vscode/settings.json
+front/!.vscode/tasks.json
+front/!.vscode/launch.json
+front/!.vscode/extensions.json
+front/.history/*
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+front/.sass-cache
+front/connect.lock
+front/coverage
+front/libpeerconnection.log
+front/npm-debug.log
+front/yarn-error.log
+front/testem.log
+front/typings
 
 # System Files
-.DS_Store
-Thumbs.db
+front/.DS_Store
+front/Thumbs.db

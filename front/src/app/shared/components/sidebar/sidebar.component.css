@@ -9,7 +9,8 @@
 }
 
 .sidebar {
-    min-height:100vh;
+    height:100%;
+    min-height: 100vh;
     background: var(--light-primary);
     box-shadow: rgba(0, 0, 0, 0.4) 2.4px 2.4px 3.2px;
     

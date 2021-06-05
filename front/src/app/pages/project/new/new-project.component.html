@@ -1,22 +1,26 @@
 <div class="container">
     <app-sidebar></app-sidebar>
 
-    <form action="" class="form">
+    <form [formGroup]="formProject" (ngSubmit)="mostrarFormulario()" class="form">
 
         <div class="form__input-group">
+            <div class="form__error-message" *ngIf="getProjectname().invalid && getProjectname().touched">
+                <span> Name is required </span>
+            </div>
             <label for="name"> Project Name </label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" formControlName=name >
         </div>
 
-        <div class="form__input-group">
+        <div class="form__input-group">           
             <label for="github"> Github repository </label>
             <small> <i> (Optional) </i> </small>
-            <input type="text" name="github" id="github">
+            <input type="text" name="github" id="github" formControlName="github">
         </div>        
 
         <div class="form__input-group">
             <label for="description"> Description </label>
-            <input type="text" name="description" id="description">
+            <small> <i> (Optional) </i> </small>
+            <input type="text" name="description" id="description" formControlName="description">
         </div>
 
         <div class="form__input-group">
